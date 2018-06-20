@@ -25,6 +25,7 @@ public class DBUtil {
         return conn;
     }
 
+
     private static void close() {
         if (conn != null) {
             try {
@@ -35,6 +36,11 @@ public class DBUtil {
         }
     }
 
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Connection conn = DBUtil.getConnection();
         System.out.println(conn);
