@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-touch-fullscreen" content="YES" />
+<script src="../ixinstyle/js/jquery-1.8.3.min.js" type="text/JavaScript"
+	language="javascript"></script>
+<title></title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #c0c2cc;
+	font-size: 14px;
+	color: #000;
+	font-family: 宋体;
+}
+
+ul li {
+	list-style: none;
+}
+
+.wraper {
+	width: 793px;
+	height: 1122px;
+	margin: 0 auto;
+	overflow: hidden;
+	zoom: 1;
+	background: #fff;
+	position: relative;
+}
+
+.layout {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 79px;
+	border-bottom: 1px solid #808080;
+	position: relative;
+}
+
+.logo img {
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+}
+
+.logo span {
+	position: absolute;
+	right: 2px;
+	bottom: 3px;
+	color: #808080;
+	font-size: 12px;
+}
+
+.main {
+	text-align: center;
+}
+
+.main h1 {
+	font-size: 22px;
+	line-height: 40px;
+	font-family: "黑体";
+}
+
+.main ol {
+	font-weight: bold;
+	line-height: 38px;
+	text-indent: 28px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.main ol span {
+	display: inline-block;
+	width: 520px;
+	border-bottom: 1px solid #000;
+	color: #ff0000;
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.main ul.list01 {
+	text-align: left;
+	padding-left: 7px;
+}
+
+.main ul.list01 li {
+	line-height: 38px;
+}
+
+.main ul.list02 {
+	text-align: left;
+	padding-left: 77px;
+}
+
+.main ul.list02 li {
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.main ul.list02 li i {
+	font-style: normal;
+	color: #000;
+}
+
+.main ul.list02 li span {
+	display: inline-block;
+	width: 345px;
+	border-bottom: 1px solid #000;
+	color: #ff0000;
+	margin-left: 8px;
+	line-height: 18px;
+	text-indent: 28px;
+	font-size: 16px;
+    font-weight: bold;
+}
+
+.main ul.list03 {
+	text-align: left;
+	padding: 32px 0 0 5px;
+}
+
+.main ul.list03 li {
+	line-height: 22px;
+	font-size: 11px;
+}
+
+.main ul.list03 h2 {
+	font-family: "黑体";
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.main p {
+	font-size: 15px;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: left;
+	margin-left: 392px;
+}
+
+.main p.gaizhang {
+	margin-top: 47px;
+}
+
+.main p.date {
+	margin-top: 68px;
+}
+
+.main p.date span {
+	color: #ff0000;
+	text-indent: 28px;
+}
+
+.main h3 {
+	font-size: 11px;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #808080;
+	position: absolute;
+	right: 106px;
+	bottom: 33px;
+}
+</style>
+
+<style type="text/css">
+.ghost {
+	height: 80px;
+	width: 100%;
+	background: #000;
+	border: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.ghost_wrap {
+	position: fixed;
+	bottom: 19px;
+	left:;
+	z-index: 999;
+}
+
+.inputbut {
+	width: 120px;
+	height: 42px;
+	text-align: center;
+	margin-top: 19px;
+	line-height: 42px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #3db1fa;
+	font-family: 微软雅黑;
+	border-radius: 2px;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+	margin-left: 8px;
+}
+
+.inputleft {
+	margin-left: 240px;
+}
+
+.inputright {
+	margin-left: 50px;
+}
+.list04{
+	margin: 10px 0 0 -15px;
+	position: relative;
+}
+.list04 p.date{
+	position: absolute;
+	right:80px;
+	bottom: 10px;
+	display: inline-table;
+}
+.list04 p.gaizhang{
+	position: absolute;
+	right:160px;
+	bottom: 94px;
+	display: inline-table;
+}
+.list04 li{
+	width:220px;
+	height:200px;
+	border:1px solid #000;
+	margin:10px 0 0 25px;
+}
+.list04 h2 span{
+	font-weight: normal;
+}
+</style>
+<style type="text/css" media="print">
+.printbutton {
+	display: none;
+}
+</style>
+</head>
+<body>
+	<div class="wraper">
+		<div class="ghost"></div>
+		<div class="layout ghost_wrap printbutton" designMode='on'>
+			<input class="inputbut inputleft" type="button" value="下载PDF" /> <input
+				class="inputbut inputright" type="button" value="打印" />
+		</div>
+
+		<div class="layout">
+			<div class="logo">
+				<img width='119' height='18' title='' alt=''
+					src='data:image/png;base64,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' />
+
+				<span>天威诚信企业实名认证申请授权书</span>
+			</div>
+			<div class="main">
+				<h1>天威诚信企业实名认证申请授权书</h1>
+				<ol>
+					本公司
+					<span>enterpriseName</span>
+					<br />（填写公司全称），根据业务需要向北京天威诚信电子商务服务有限公司（以下简称天威诚信公司）申请实名认证。在申请实名认证过程中，本公司对提交的认证资料和信息作如下承诺：
+				</ol>
+				<ul class="list01">
+					<li>1、本公司保证提交的资料和信息均真实有效，同时愿意对因提交虚假信息而引起的任何纠纷和后果承担法律责任。</li>
+					<li>2、因实名认证不当使用而产生的任何纠纷和后果均由我公司承担，与天威诚信公司无关。</li>
+					<li>3、本授权书在实名认证有效期内有效。</li>
+					<li>4、申请者提供的认证资料的扫描件与原件具有同等法律效力。</li>
+					<li>5、本公司授权一名正式员工为实名认证申请联系人，负责办理天威诚信实名认证申请事宜。联系人信息如下：</li>
+				</ul>
+				<ul class="list02">
+					<li><i>联系人姓名：</i><span>realName</span></li>
+					<li><i>联系人电话(手机)：</i><span style="width: 302px;">mPhone</span></li>
+					<li><i>联系人电子邮箱(Email)：</i><span style="width: 266px;">email</span></li>
+				</ul>
+				<ul class="list03" style="font-size: 10px;">
+					<h2>注意事项：</h2>
+					<li>①此授权书的信息均为必填项，请如实、准确、清楚地填写。</li>
+					<li>②联系人必须为认证申请公司的正式员工，若办理联系人有变动，请务必及时将新联系人信息反馈至天威诚信公司。</li>
+					<li>③天威诚信公司保证对申请公司提交的所有信息予以保密。</li>
+				</ul>
+				<p class="gaizhang">公司公章：</p>
+				<p class="date">
+						日&nbsp;&nbsp;&nbsp;&nbsp;期：<span>nowdate</span>
+				</p>
+
+
+				<h3>认证服务部留存</h3>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		$(".inputright").click(function(){
+			PrintPage();
+		});
+	$(".inputleft").click(function(){
+			var loadProxyPdf = window.location.href.replace("loadPorxy","loadProxyPdf");
+			window.open(loadProxyPdf, '_self');
+		})
+	});
+	
+	function PrintPage()  
+	{  
+		PageSetup_Null() ;  
+		window.print() ;  
+	}
+	function PageSetup_Null()  
+	{  
+		try{  
+			 var RegWsh = new ActiveXObject("WScript.Shell") ;  
+			 hkey_key="header" ;  
+			 RegWsh.RegWrite(hkey_root+hkey_path+hkey_key,"") ;  
+			 hkey_key="footer" ;  
+			 RegWsh.RegWrite(hkey_root+hkey_path+hkey_key,"") ;  
+		 }  
+		catch(e){}  
+	} 
+</script>
+</html>
